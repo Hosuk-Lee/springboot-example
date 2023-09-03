@@ -46,33 +46,39 @@
       <artifactId>logstash-logback-encoder</artifactId>
       <version>7.4</version>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.springdoc</groupId>-->
-<!--      <artifactId>springdoc-openapi-ui</artifactId>-->
-<!--      <version>1.6.15</version>-->
-<!--    </dependency>-->
     <dependency>
       <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
-      <version>2.2.0</version>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>1.6.15</version>
     </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.springdoc</groupId>-->
+<!--      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>-->
+<!--      <version>2.2.0</version>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
-    <dependency>
-      <groupId>org.hibernate</groupId>
-      <artifactId>hibernate-validator</artifactId>
-      <version>8.0.1.Final</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.hibernate</groupId>-->
+<!--      <artifactId>hibernate-validator</artifactId>-->
+<!--      <version>8.0.1.Final</version>-->
+<!--    </dependency>-->
 
     <dependency>
       <groupId>org.springframework.cloud</groupId>
       <artifactId>spring-cloud-starter-sleuth</artifactId>
-      <version>3.1.9</version>
+<!--      <version>3.1.9</version>-->
     </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-zipkin</artifactId>
+      <version>2.2.8.RELEASE</version>
+    </dependency>
+
   </dependencies>
 
 </project>
