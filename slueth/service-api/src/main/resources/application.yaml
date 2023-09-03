@@ -1,0 +1,72 @@
+server:
+  port: 21000
+  ssl:
+    enabled: false
+  error:
+    #에러 발생시 처리 경로, default : /error
+    path: /error
+    #응답 시 바인딩된 에러에 대한 표시 여부 : [NEVER, ALWAYS, ON_PARAM], default : NEVER
+    include-binding-errors: ALWAYS
+    #응답 시 exception 내용 포함 여부, default : false
+    include-exception: true
+    # 응답 시 message 포함 여부 : [NEVER, ALWAYS, ON_PARAM], default : NEVER
+    include-message: ALWAYS
+    # 응답 시 stack trace 포함 여부 : [NEVER, ALWAYS, ON_PARAM], default : NEVER
+    include-stacktrace: NEVER
+    #404 상황을 에러 상황으로 처리
+    throw-exception-if-no-handler-found: true
+
+
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    #password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create #none
+      show_sql: true
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.DB2Dialect
+      # OSIV 옵션 기본값 true > false  변경.
+      # API 응답이 끝날 때 까지 DB 커넥션과 영속성컨텍스트를 유지 하기 때문에 false f로 끈다.
+#      open-in-view: false
+
+
+  # p6spy
+  sleuth:
+    jdbc:
+      p6spy:
+        enable-logging: true
+
+logging:
+  level:
+    com.kbstar.nfcas001: DEBUG
+    org.springframework.security: DEBUG
+
+spring-doc:
+  api-docs:
+    path: /api-docs/json
+    groups:
+      enabled: 'true'
+  default-produces-media-type: application/json;charset=UTF-8
+  default-consumes-media-type: application/json;charset=UTF-8
+  version: v1.0.0
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    path: /api-docs
+  cache:
+    disabled: 'true'
+  packages-to-scan: hs.springboot.example
+
+#springdoc:
+#  swagger-ui:
+#    path=/swagger-ui:
+#      html:
