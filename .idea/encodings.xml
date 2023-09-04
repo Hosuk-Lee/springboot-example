@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/slueth/service-two/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slueth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slueth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/slueth/zipkin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/slueth/zipkin-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx-manager/src/main/java" charset="UTF-8" />

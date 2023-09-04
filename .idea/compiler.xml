@@ -17,6 +17,7 @@
       <module name="tx-manager" target="17" />
       <module name="tx-proxy" target="17" />
       <module name="tx-recovery" target="17" />
+      <module name="zipkin-server" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

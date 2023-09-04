@@ -1,7 +1,7 @@
-hs\springboot\example\Main.class
-hs\springboot\example\two\TwoApi.class
-hs\springboot\example\two\TwoEntity.class
-hs\springboot\example\two\TwoRepository.class
-hs\springboot\example\two\TwoApiService.class
-hs\springboot\example\two\TwoController.class
-hs\springboot\example\two\TwoProvider.class
+hs/springboot/example/Main.class
+hs/springboot/example/two/TwoApiService.class
+hs/springboot/example/two/TwoRepository.class
+hs/springboot/example/two/TwoEntity.class
+hs/springboot/example/two/TwoController.class
+hs/springboot/example/two/TwoApi.class
+hs/springboot/example/two/TwoProvider.class

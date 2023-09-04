@@ -27,4 +27,14 @@ public interface OneApi {
 //            consumes = { "application/json" }
     )
     public ResponseEntity<Map> inquirySub();
+
+    @Operation(summary = "One Call Two API", operationId = "inquiryOneCallTwo", description = "api 1 description", tags={ "api", "one", "sub call" })
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "조회 응답"),  })
+    @GetMapping(
+            value = "/one-call-two"
+//            produces = { "application/json" },
+//            consumes = { "application/json" }
+    )
+    public ResponseEntity<Map> inquiryOneCallTwo();
 }

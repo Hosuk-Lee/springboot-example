@@ -27,6 +27,11 @@ public class SampleController implements SampleApi
     @Override
     public ResponseEntity<Map> inquirySub() {
         log.info("hello");
+        log.info("hello");
+        log.info("hello");
+        log.info("hello");
+        log.info("hello");
+
         return delegate.inquirySub();
     }
 }

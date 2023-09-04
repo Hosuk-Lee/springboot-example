@@ -20,6 +20,6 @@ public class SampleEntity {
 
     @Column(name="sample")
     private String sample;
-    @Column(name="account")
-    private String account;
+    @Column(name="traceId")
+    private String traceId;
 }

@@ -20,4 +20,11 @@ public class OneProvider {
         return ResponseEntity.status(HttpStatus.OK).body(map);
     }
 
+    public ResponseEntity<Map> inquiryOneCallTwo() {
+        sub1ApiService.execute();
+        ObjectMapper om = new ObjectMapper();
+        Map map = om.convertValue(sub1ApiService.inquiry(), Map.class);
+        return ResponseEntity.status(HttpStatus.OK).body(map);
+    }
+
 }
