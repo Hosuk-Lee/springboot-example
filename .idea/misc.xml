@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/elastic-apm/apm-svc-one/apm-svc-two/pom.xml" />
         <option value="$PROJECT_DIR$/slueth/zipkin-server/pom.xml" />
         <option value="$PROJECT_DIR$/tx-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/tx-recovery/pom.xml" />

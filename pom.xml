@@ -15,6 +15,7 @@
   <modules>
     <module>openfeign</module>
     <module>slueth</module>
+    <module>elastic-apm</module>
   </modules>
 
   <properties>
