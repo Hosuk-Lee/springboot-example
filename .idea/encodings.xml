@@ -13,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/elastic-apm/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/openfeign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/openfeign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/runner/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/runner/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slueth/service-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slueth/service-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/slueth/service-one/src/main/java" charset="UTF-8" />
@@ -31,5 +33,9 @@
     <file url="file://$PROJECT_DIR$/tx-proxy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx-recovery/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx-recovery/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template/thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template/thymeleaf/src/main/resources" charset="UTF-8" />
   </component>
 </project>

@@ -16,6 +16,8 @@
     <module>openfeign</module>
     <module>slueth</module>
     <module>elastic-apm</module>
+    <module>web-template</module>
+    <module>runner</module>
   </modules>
 
   <properties>

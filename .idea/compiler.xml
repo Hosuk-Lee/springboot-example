@@ -13,6 +13,8 @@
         <module name="service-two" />
         <module name="apm-svc-one" />
         <module name="apm-api" />
+        <module name="thymeleaf" />
+        <module name="runner" />
         <module name="service-api" />
       </profile>
     </annotationProcessing>

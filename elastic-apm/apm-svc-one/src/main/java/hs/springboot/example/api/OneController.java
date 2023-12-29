@@ -30,7 +30,7 @@ public class OneController implements OneApi
         System.out.println("@@@@@@@@@@@");
 
         try {
-            Thread.sleep(30000L);
+            Thread.sleep(100L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
