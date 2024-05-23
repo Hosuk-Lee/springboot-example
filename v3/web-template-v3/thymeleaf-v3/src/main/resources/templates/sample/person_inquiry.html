@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="/js/axios/axios.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div>
+    <table>
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>이름</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.address}"></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+<script>
+// const axios = require('axios');
+  console.log(axios);
+axios.get('/person')
+  .then(function (response) {
+    // 성공 핸들링
+    console.log(response);
+  })
+  .catch(function (error) {
+    // 에러 핸들링
+    console.log(error);
+  })
+  .finally(function () {
+    // 항상 실행되는 영역
+  });
+
+
+
+
+</script>
+</html>

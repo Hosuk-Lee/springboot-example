@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+
+  <script>
+		//window.location="http://localhost:8080/dashboard/main.html";
+
+  </script>
+
+</head>
+
+<body>
+<p>This is template.html</p>
+<p th:text="${person}"></p>
+<input type="text"
+       value="test"
+       th:value="${person.name}"> <!--th:value 타임리프의 문법을 이용해 value 설정-->
+</body>
+
+</html>

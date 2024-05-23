@@ -1,0 +1,10 @@
+server.port: 18080
+spring:
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+  #    prefix: file:src/main/resources/templates/
+  resources:
+    static-locations: file:src/main/resources/static/
