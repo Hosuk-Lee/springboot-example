@@ -1,0 +1,27 @@
+<body>
+<header>
+  <h1>게시판</h1>
+</header>
+<main>
+  <section class="stats">
+    <h2>통계</h2>
+    <ul>
+      <li>총 게시글: {{totalPosts}}</li>
+      <li>최근 게시글: {{latestPost.title}}</li>
+      <li>가장 인기 있는 게시글: {{mostPopularPost.title}}</li>
+    </ul>
+  </section>
+  <section class="posts">
+    <h2>최신 게시글</h2>
+    <ul>
+      {{#latestPosts}}
+      <li>
+        <a href="/posts/{{id}}">{{title}}</a>
+        <span class="author">작성자: {{author}}</span>
+        <span class="date">작성 날짜: {{createdAt}}</span>
+      </li>
+      {{/latestPosts}}
+    </ul>
+  </section>
+</main>
+</body>
