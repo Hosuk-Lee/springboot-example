@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper SYSTEM "mybatis-mapper.dtd">
+<mapper namespace="step1.mapper.ArticleMapper">
+  <insert id="savePost" parameterType="hs.sample.step1.v3.domain.article.entity">
+    INSERT INTO article (title, content, author, created_at)
+    VALUES (#{title}, #{content}, #{author}, NOW())
+  </insert>
+
+  <update id="updatePost" parameterType="hs.sample.step1.v3.domain.article.entity">
+    UPDATE article
+    SET title = #{title}, content = #{content}, author = #{author}
+    WHERE id = #{id}
+  </update>
+
+  <delete id="deletePostById" parameterType="java.lang.Long">
+    DELETE FROM article WHERE id = #{id}
+  </delete>
+
+  <select id="findPostById" parameterType="java.lang.Long"
+    resultType="hs.sample.step1.v3.domain.article.entity.ArticleEntity">
+    SELECT * FROM article WHERE id = #{id}
+  </select>
+
+  <select id="findAllPosts" resultType="hs.sample.step1.v3.domain.article.entity.ArticleEntity">
+    SELECT * FROM article ORDER BY id DESC
+    <!--    ORDER BY created_at DESC-->
+  </select>
+
+</mapper>
