@@ -9,12 +9,46 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
+  <name>SB :: V3</name>
+  <description>SB :: V3</description>
   <artifactId>v3</artifactId>
+  <packaging>pom</packaging>
+
+
+  <modules>
+    <module>utility-v3</module>
+    <module>runner-v3</module>
+    <module>web-template-v3</module>
+    <module>profiles-v3</module>
+    <module>sample-v3</module>
+  </modules>
+
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <spring-boot.version>3.2.4</spring-boot.version>
+    <spring-cloud.version>2022.0.3</spring-cloud.version>
   </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
 </project>

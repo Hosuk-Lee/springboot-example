@@ -4,15 +4,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>hs.springboot.example</groupId>
-    <artifactId>v2</artifactId>
+    <artifactId>v3</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
 
-  <name>SB :: Runner</name>
-  <description>SB :: Runner</description>
-  <artifactId>runner</artifactId>
+  <name>SB :: V3 :: Runner</name>
+  <description>SB :: V3 :: Runner</description>
+  <artifactId>runner-v3</artifactId>
+  <packaging>pom</packaging>
+
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -21,6 +23,11 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>hs.springboot.example</groupId>
+      <artifactId>utility-v3</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
@@ -32,7 +39,7 @@
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot</artifactId>
+      <artifactId>spring-boot-starter</artifactId>
     </dependency>
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>

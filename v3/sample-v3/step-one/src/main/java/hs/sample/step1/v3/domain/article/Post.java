@@ -1,4 +1,4 @@
-package hs.sample.step1.v3.domain.post;
+package hs.sample.step1.v3.domain.article;
 
 
 import java.time.LocalDateTime;

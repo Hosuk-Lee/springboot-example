@@ -13,26 +13,23 @@ public class WebApplication {
         SpringApplication.run(WebApplication.class, args);
     }
 
-//    @GetMapping("/aaa")
-//    public String aaa() {
-//        System.out.println("Request aaa");
-//        return "/index.html";
-//    }
-//
-//    @GetMapping("/bbb")
-//    public String bbb() {
-//        System.out.println("Request bbb");
-//        return "/static.html";
-//    }
-
-    @GetMapping("/template")
-    public String template() {
-        System.out.println("Request template");
-        return "template";
+    @GetMapping("/aaa")
+    public String aaa() throws InterruptedException {
+        System.out.println("Request aaa");
+        Thread.sleep(5000);
+        return "/index.html";
     }
-//    @GetMapping("/sample")
-//    public String sample() {
-//        System.out.println("sample template");
-//        return "sample/sample";
-//    }
+
+
+    @GetMapping("/bbb")
+    public String bbb() {
+        System.out.println("Request bbb");
+        return "/static.html";
+    }
+
+    @GetMapping("/sample")
+    public String sample() {
+        System.out.println("sample template");
+        return "sample/sample";
+    }
 }

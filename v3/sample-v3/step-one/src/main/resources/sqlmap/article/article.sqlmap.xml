@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper SYSTEM "mybatis-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "//mybatis.org/DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="step1.mapper.ArticleMapper">
-  <insert id="savePost" parameterType="hs.sample.step1.v3.domain.article.entity">
+
+  <insert id="savePost" parameterType="hs.sample.step1.v3.domain.article.entity.ArticleEntity">
     INSERT INTO article (title, content, author, created_at)
     VALUES (#{title}, #{content}, #{author}, NOW())
   </insert>
 
-  <update id="updatePost" parameterType="hs.sample.step1.v3.domain.article.entity">
+  <update id="updatePost" parameterType="hs.sample.step1.v3.domain.article.entity.ArticleEntity">
     UPDATE article
     SET title = #{title}, content = #{content}, author = #{author}
     WHERE id = #{id}

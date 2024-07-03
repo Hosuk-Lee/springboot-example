@@ -2,19 +2,19 @@ package hs.springboot.example;
 
 
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @AllArgsConstructor
 @RestController
 public class SampleController {
 
-    private final RestTemplate restTemplate;
+//    private final RestTemplate restTemplate;
+
+    @GetMapping("/test")
+    public void test() {
+        System.out.println("test");
+    }
 
 //    @GetMapping("/sample")
 //    public void sample(){

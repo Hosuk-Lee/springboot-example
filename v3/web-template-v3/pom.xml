@@ -4,18 +4,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>hs.springboot.example</groupId>
-    <artifactId>v2</artifactId>
+    <artifactId>v3</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <name>SB :: WEB</name>
-  <description>SB :: WEB</description>
-
-  <artifactId>web-template</artifactId>
+  <name>SB :: V3:: WEB</name>
+  <description>SB :: V3 :: WEB</description>
+  <artifactId>web-template-v3</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>thymeleaf</module>
+    <module>thymeleaf-v3</module>
   </modules>
 
   <dependencies>

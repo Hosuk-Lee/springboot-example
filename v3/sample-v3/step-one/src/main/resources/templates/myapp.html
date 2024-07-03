@@ -1,0 +1,80 @@
+<!--{{>/common/head}}-->
+<span style="" id=""> {{session.roleA}}</span>
+<span style="" id=""> {{session.Server}}</span>
+<div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true" style="z-index: 1050">
+  <div class="main-menu-content">
+   <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+    {{#session.roleA}}
+    <li class="nav-item has-sub" id="MENU_Basic_Management">
+     <a>
+      <i class="icon-info"></i>
+      <span class="menu-title" style="font-family: 'Montserrat', sans-serif">Basic Information</span>
+     </a>
+     <ul class="menu-content">
+      <li>
+       <a class="menu-item" id="1111" onclick="fnMenuSelector('li_doc','mb','itmc', 'A1', this);">A1</a>
+      </li>
+      <li>
+       <a class="menu-item" id="1112" onclick="fnMenuSelector('li_doc','mb','itmc', 'A2', this);">A2</a>
+      </li>
+     </ul>
+    </li>
+    {{/session.roleA}}
+     {{#session.roleB}}
+
+    <li class="nav-item">
+
+     <a>
+
+      <i class="icon-target"></i>
+
+      <span class="menu-title">C</span>
+
+     </a>
+
+     <ul class="menu-content">
+      <li class="nav-item">
+       <a class="menu-item">C</a>
+       <ul class="menu-content">
+        <li>
+         <a class="menu-item" onclick="fnMenuSelector('li_doc','mb','itmc', 'B1', this);">B1</a>
+        </li>
+        {{#session.roleC}}
+        <li>
+         <a class="menu-item" onclick="c()">B2</a>
+        </li>
+        {{/session.roleC}}
+       </ul>
+     </ul>
+    </li>
+    {{/sessionSR.ssRoleITMC}}
+  <ul>
+    {{^session.realYn}}
+
+    <li>
+
+      <a class="menu-item" onclick="fnMenuSelector('li_doc','mb','t', 'TEST_CON', this);">Test Console</a>
+
+      </li>
+
+    {{/session.realYn}}
+
+       </ul>
+
+    </li>
+
+   </ul>
+
+  </div>
+
+</div>
+
+
+
+<ul id="selectListUl" class="searchBoxUlList"></ul>
+
+<!-- END: Main Menu-->
+
+{{>/common/tail}}
+
+{{>/common/lang}}

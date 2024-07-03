@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE configuration PUBLIC "//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+  <!-- SqlSessionTemplate 관련 설정 -->
+  <!--  <settings> 요소는 MyBatis 전역 설정을 구성하는데 사용된다. 주요 설정은 다음과 같다.-->
+  <!-- https://mybatis.org/mybatis-3/ko/configuration.html#settings -->
+  <settings>
+    <setting name="cacheEnabled" value="false"/><!-- MyBatis가 캐시를 사용할지 여부를 설정합니다. 기본값은 true입니다. -->
+    <setting name="jdbcTypeForNull" value="NULL"/> <!--매개변수로 null 값을 전달할 때 JDBC 타입을 설정합니다. 기본값은 OTHER입니다. -->
+    <setting name="mapUnderscoreToCamelCase"
+      value="true"/> <!-- 카멜 케이스(camel case)와 스네이크 케이스(snake case)를 자동 매핑할지 여부를 설정합니다. 기본값은 false입니다 -->
+    <!--    <setting name="" value=""/>-->
+  </settings>
+</configuration>

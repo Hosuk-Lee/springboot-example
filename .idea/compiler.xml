@@ -7,22 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="openfeign" />
-        <module name="service-one" />
-        <module name="apm-svc-two" />
-        <module name="service-two" />
-        <module name="apm-svc-one" />
-        <module name="apm-api" />
         <module name="thymeleaf" />
         <module name="runner" />
-        <module name="service-api" />
+        <module name="profiles-v3" />
+        <module name="step-one" />
+        <module name="thymeleaf-v3" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="tx-manager" target="17" />
-      <module name="tx-proxy" target="17" />
-      <module name="tx-recovery" target="17" />
-      <module name="zipkin-server" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

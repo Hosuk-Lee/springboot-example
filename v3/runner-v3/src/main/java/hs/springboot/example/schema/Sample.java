@@ -3,7 +3,9 @@ package hs.springboot.example.schema;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import hs.springboot.example.config.CustomBeanUtils;
+import lombok.Getter;
 
+@Getter
 public class Sample {
 
     private String message;

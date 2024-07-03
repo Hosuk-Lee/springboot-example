@@ -4,14 +4,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <groupId>hs.springboot.example</groupId>
-    <artifactId>web-template</artifactId>
+    <artifactId>web-template-v3</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <name>SB :: WEB :: thymeleaf</name>
-  <description>SB :: WEB :: thymeleaf</description>
-  <artifactId>thymeleaf</artifactId>
+  <name>SB :: V3 :: WEB :: thymeleaf</name>
+  <description>SB :: V3 :: WEB :: thymeleaf</description>
+  <artifactId>thymeleaf-v3</artifactId>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
@@ -22,7 +22,19 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-devtools</artifactId>
     </dependency>
   </dependencies>
 

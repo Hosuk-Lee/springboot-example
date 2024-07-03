@@ -1,5 +1,10 @@
-package hs.sample.step1.v3.domain.article.entity;
+package hs.sample.step1.v3.domain;
 
-public class BaseEntity {
+import lombok.Data;
+
+@Data
+public abstract class BaseEntity {
+
+    private Long id;
 
 }

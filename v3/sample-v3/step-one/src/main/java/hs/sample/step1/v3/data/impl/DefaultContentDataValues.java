@@ -1,4 +1,6 @@
-package hs.sample.step1.v3.data;
+package hs.sample.step1.v3.data.impl;
+
+import hs.sample.step1.v3.data.ContentDataValues;
 
 public class DefaultContentDataValues implements ContentDataValues {
 

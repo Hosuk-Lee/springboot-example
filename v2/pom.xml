@@ -10,11 +10,44 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>v2</artifactId>
+  <packaging>pom</packaging>
+  <name>SB :: V2</name>
+  <description>SB :: V2</description>
+
+  <modules>
+<!--    <module>openfeign</module>-->
+<!--    <module>slueth</module>-->
+<!--    <module>elastic-apm</module>-->
+    <module>web-template</module>
+    <module>runner</module>
+  </modules>
+
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <spring-boot.version>2.7.7</spring-boot.version>
+    <spring-cloud.version>2021.0.8</spring-cloud.version>
   </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${spring-boot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
 </project>

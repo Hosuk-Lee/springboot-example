@@ -1,0 +1,10 @@
+server.port: 8000
+
+app.name: sample
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+app.name: sample-dev

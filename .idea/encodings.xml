@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-api/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-svc-one/apm-svc-two/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-svc-one/apm-svc-two/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-svc-one/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-svc-one/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-svc-two/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/apm-svc-two/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/elastic-apm/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/openfeign/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/openfeign/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/runner/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/runner/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/service-api/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/service-api/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/service-one/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/service-one/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/service-two/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/service-two/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/zipkin-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/slueth/zipkin-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx-manager/src/main/java" charset="UTF-8" />
@@ -33,9 +9,55 @@
     <file url="file://$PROJECT_DIR$/tx-proxy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx-recovery/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tx-recovery/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web-template/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web-template/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web-template/thymeleaf/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/web-template/thymeleaf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-svc-one/apm-svc-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-svc-one/apm-svc-two/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-svc-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-svc-one/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-svc-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/apm-svc-two/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/elastic-apm/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/openfeign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/openfeign/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/runner/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/runner/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/service-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/service-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/service-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/service-one/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/service-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/service-two/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/zipkin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/slueth/zipkin-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/web-template/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/web-template/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/web-template/thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v2/web-template/thymeleaf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/profiles-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/profiles-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/runner-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/runner-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/sample-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/sample-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/sample-v3/step-one/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/sample-v3/step-one/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/utility-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/utility-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/web-template-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/web-template-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/web-template-v3/thymeleaf-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/v3/web-template-v3/thymeleaf-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template-v3/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template-v3/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template-v3/thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web-template-v3/thymeleaf/src/main/resources" charset="UTF-8" />
   </component>
 </project>
