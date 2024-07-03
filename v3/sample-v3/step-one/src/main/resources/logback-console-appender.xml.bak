@@ -1,0 +1,5 @@
+<included>
+
+  <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+</included>
