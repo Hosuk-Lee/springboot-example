@@ -14,5 +14,12 @@
         <module name="thymeleaf-v3" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="openfeign" target="17" />
+      <module name="service-api" target="17" />
+      <module name="service-one" target="17" />
+      <module name="service-two" target="17" />
+      <module name="slueth" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

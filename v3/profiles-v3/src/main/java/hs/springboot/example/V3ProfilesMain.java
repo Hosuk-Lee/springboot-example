@@ -2,13 +2,17 @@ package hs.springboot.example;
 
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Objects;
+import java.util.Properties;
+import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -18,15 +22,32 @@ import org.springframework.core.env.ConfigurableEnvironment;
 public class V3ProfilesMain extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
+
+        Properties properties = System.getProperties();
+
+//        properties.forEach((k, v) -> System.out.println("++ " + k + " : " + v));
+
+        LinkedHashMap<String, String> collect = properties.entrySet().stream()
+                .collect(Collectors.toMap(k -> (String) k.getKey(), e -> (String) e.getValue()))
+                .entrySet().stream().sorted(Map.Entry.comparingByKey())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+
+        collect.forEach((k, v) -> System.out.println(k + ":" + v));
+
+        if (Objects.isNull(System.getProperties().getProperty("spring.profiles.active"))) {
+            System.setProperty("spring.profiles.active", "local");
+        }
+
+        System.getProperties().entrySet().stream()
+                .collect(Collectors.toMap(k -> (String) k.getKey(), e -> (String) e.getValue()))
+                .entrySet().stream().sorted(Map.Entry.comparingByKey())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        (oldValue, newValue) -> oldValue, LinkedHashMap::new))
+                .forEach((k, v) -> System.out.println(k + ":" + v));
         SpringApplication.run(V3ProfilesMain.class, args);
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        ConfigurableEnvironment
-        builder.environment()
-        return super.configure(builder);
-    }
 
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
