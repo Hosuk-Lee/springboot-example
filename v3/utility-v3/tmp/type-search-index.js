@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"developer.util","l":"BigdecimalTest"},{"p":"hs.springboot.example.javadoc","l":"JavadocClass"},{"p":"developer.util","l":"StringTest"}];updateSearchResults();
